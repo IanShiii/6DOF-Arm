@@ -1,0 +1,90 @@
+#pragma once
+
+#include <PiPCA9685/PCA9685.h>
+
+#include "pluginlib/class_list_macros.hpp"
+#include "hardware_interface/system_interface.hpp"
+
+namespace hardware {
+    class HardwareInterface : public hardware_interface::SystemInterface {
+        public:
+            HardwareInterface() = default;
+
+            hardware_interface::CallbackReturn on_init(const hardware_interface::HardwareInfo & info) override;
+            hardware_interface::CallbackReturn on_configure([[maybe_unused]] const rclcpp_lifecycle::State & previous_state) override;
+            hardware_interface::CallbackReturn on_cleanup([[maybe_unused]] const rclcpp_lifecycle::State & previous_state) override;
+            hardware_interface::CallbackReturn on_shutdown([[maybe_unused]] const rclcpp_lifecycle::State & previous_state) override;
+            hardware_interface::CallbackReturn on_activate([[maybe_unused]] const rclcpp_lifecycle::State & previous_state) override;
+            hardware_interface::CallbackReturn on_deactivate([[maybe_unused]] const rclcpp_lifecycle::State & previous_state) override;
+            hardware_interface::CallbackReturn on_error([[maybe_unused]] const rclcpp_lifecycle::State & previous_state) override;
+
+            std::vector<hardware_interface::StateInterface> export_state_interfaces() override;
+            std::vector<hardware_interface::CommandInterface> export_command_interfaces() override;
+
+            hardware_interface::return_type read([[maybe_unused]] const rclcpp::Time & time, [[maybe_unused]] const rclcpp::Duration & period) override;
+            hardware_interface::return_type write([[maybe_unused]] const rclcpp::Time & time, [[maybe_unused]] const rclcpp::Duration & period) override;
+
+        private:
+            PiPCA9685::PCA9685 pca;
+
+            // PCA9685 servo numbers and GPIO Pins
+
+            int joint_1_servo_id_;
+            int joint_2_servo_id_;
+            int joint_3_servo_id_;
+            int joint_4_servo_id_;
+            int joint_5_servo_id_;
+            int joint_6_servo_id_;
+            int gripper_servo_id_;
+
+            // Inversions
+
+            bool joint_1_inverted_;
+            bool joint_2_inverted_;
+            bool joint_3_inverted_;
+            bool joint_4_inverted_;
+            bool joint_5_inverted_;
+            bool joint_6_inverted_;
+
+            // Limits
+
+            double joint_1_min_degrees_;
+            double joint_1_max_degrees_;
+            double joint_2_min_degrees_;
+            double joint_2_max_degrees_;
+            double joint_3_min_degrees_;
+            double joint_3_max_degrees_;
+            double joint_4_min_degrees_;
+            double joint_4_max_degrees_;
+            double joint_5_min_degrees_;
+            double joint_5_max_degrees_;
+            double joint_6_min_degrees_;
+            double joint_6_max_degrees_;
+
+            // Gripper Angles
+
+            double gripper_closed_degrees_;
+            double gripper_open_degrees_;
+
+            // Targets
+
+            double joint_1_target_degrees_;
+            double joint_2_target_degrees_;
+            double joint_3_target_degrees_;
+            double joint_4_target_degrees_;
+            double joint_5_target_degrees_;
+            double joint_6_target_degrees_;
+            double gripper_closed_; // 1.0 = closed, 0.0 = open
+
+            /**
+             * @brief Converts an angle in degrees to ticks for the PCA9685.
+             * @param angle Angle in radians [-2.35619, 2.35619] (-135 to 135 degrees)
+             */
+            unsigned int angle_to_ticks(double degrees, bool inverted);
+
+            /**
+             * @brief Clamps command values to [-2.35619, 2.35619] radians (-135 to 135 degrees, which are the limits for the servos).
+             */
+            void clamp_command_values();
+    };
+}

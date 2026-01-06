@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot name="arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Load pure URDF -->
+  <xacro:include filename="$(find arm_description)/urdf/arm.urdf"/>
+
+  <!-- Load ros2_control definitions -->
+  <xacro:include filename="$(find arm_description)/urdf/arm_ros2_control.xacro"/>
+
+  <!-- Expand ros2_control -->
+  <xacro:arm_ros2_control/>
+
+</robot>

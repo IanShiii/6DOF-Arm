@@ -1,0 +1,5 @@
+<library path="hardware">
+  <class name="hardware/HardwareInterface" 
+         type="hardware::HardwareInterface" 
+         base_class_type="hardware_interface::SystemInterface"/>
+</library>
