@@ -35,10 +35,6 @@ namespace hardware {
             } else if (joint.name == "joint_6") {
                 joint_6_servo_id_ = std::stoi(joint.parameters.at("servo_id"));
                 joint_6_inverted_ = joint.parameters.at("inverted") == "true";
-            } else if (joint.name == "gripper") {
-                gripper_servo_id_ = std::stoi(joint.parameters.at("servo_id"));
-                gripper_closed_degrees_ = std::stod(joint.parameters.at("closed_angle"));
-                gripper_open_degrees_ = std::stod(joint.parameters.at("open_angle"));
             }
         }
 
@@ -52,7 +48,6 @@ namespace hardware {
         joint_4_target_degrees_ = 0.0;
         joint_5_target_degrees_ = 0.0;
         joint_6_target_degrees_ = 0.0;
-        gripper_closed_ = false;
 
         pca.set_pwm_freq(50);
         pca.set_all_pwm(0, 4096);
@@ -93,7 +88,6 @@ namespace hardware {
         state_interfaces.emplace_back(hardware_interface::StateInterface("joint_4", hardware_interface::HW_IF_POSITION, &joint_4_target_degrees_));
         state_interfaces.emplace_back(hardware_interface::StateInterface("joint_5", hardware_interface::HW_IF_POSITION, &joint_5_target_degrees_));
         state_interfaces.emplace_back(hardware_interface::StateInterface("joint_6", hardware_interface::HW_IF_POSITION, &joint_6_target_degrees_));
-        state_interfaces.emplace_back(hardware_interface::StateInterface("gripper", "closed", &gripper_closed_));
         return state_interfaces;
     }
 
@@ -105,7 +99,6 @@ namespace hardware {
         command_interfaces.emplace_back(hardware_interface::CommandInterface("joint_4", hardware_interface::HW_IF_POSITION, &joint_4_target_degrees_));
         command_interfaces.emplace_back(hardware_interface::CommandInterface("joint_5", hardware_interface::HW_IF_POSITION, &joint_5_target_degrees_));
         command_interfaces.emplace_back(hardware_interface::CommandInterface("joint_6", hardware_interface::HW_IF_POSITION, &joint_6_target_degrees_));
-        command_interfaces.emplace_back(hardware_interface::CommandInterface("gripper", "closed", &gripper_closed_));
         return command_interfaces;
     }
 
@@ -122,12 +115,6 @@ namespace hardware {
         pca.set_pwm(joint_4_servo_id_, 0, angle_to_ticks(joint_4_target_degrees_, joint_4_inverted_));
         pca.set_pwm(joint_5_servo_id_, 0, angle_to_ticks(joint_5_target_degrees_, joint_5_inverted_));
         pca.set_pwm(joint_6_servo_id_, 0, angle_to_ticks(joint_6_target_degrees_, joint_6_inverted_));
-
-        if (static_cast<bool>(gripper_closed_)) {
-            pca.set_pwm(gripper_servo_id_, 0, angle_to_ticks(gripper_closed_degrees_, false));
-        } else {
-            pca.set_pwm(gripper_servo_id_, 0, angle_to_ticks(gripper_open_degrees_, false));
-        }
 
         return hardware_interface::return_type::OK;
     }
