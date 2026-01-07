@@ -33,7 +33,7 @@ class Operator(Node):
         
         twist_cmd = TwistStamped()
         twist_cmd.header.stamp = self.get_clock().now().to_msg()
-        twist_cmd.header.frame_id = 'arm_link0'
+        twist_cmd.header.frame_id = 'world'
 
         if (msg.buttons[3] == 1):  # y button
             twist_cmd.twist.linear.x = 0.1

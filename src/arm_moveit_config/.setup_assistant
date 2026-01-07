@@ -1,19 +1,19 @@
 moveit_setup_assistant_config:
   urdf:
     package: arm_description
-    relative_path: urdf/arm.urdf.xacro
+    relative_path: urdf/arm.urdf
   srdf:
-    package: arm_description
-    relative_path: srdf/arm.srdf
+    relative_path: config/arm.srdf
   package_settings:
-    author_name: Ian
+    author_name: Ian Shi
     author_email: ianshi1026@gmail.com
-    generated_timestamp: 1766202395
+    generated_timestamp: 1767692294
   control_xacro:
     command:
       - position
     state:
       - position
+      - velocity
   modified_urdf:
     xacros:
       - control_xacro
@@ -22,3 +22,4 @@ moveit_setup_assistant_config:
       - position
     state:
       - position
+      - velocity

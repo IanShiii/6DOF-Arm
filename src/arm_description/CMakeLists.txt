@@ -14,6 +14,7 @@ install(
     urdf
     srdf
     meshes
+    assets
   DESTINATION share/${PROJECT_NAME}
 )
 

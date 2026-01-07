@@ -21,10 +21,6 @@ def generate_launch_description():
         MoveItConfigsBuilder("arm", package_name="arm_moveit_config")
         .robot_description(file_path=os.path.join(arm_description_package, "urdf", "arm.urdf.xacro"))
         .robot_description_semantic(file_path=os.path.join(arm_description_package, "srdf", "arm.srdf"))
-        .planning_pipelines(
-            pipelines=["ompl", "pilz_industrial_motion_planner", "stomp"],
-            default_planning_pipeline="ompl"
-        )
         .to_moveit_configs()
     )
 
@@ -86,12 +82,6 @@ def generate_launch_description():
         output="screen",
     )
 
-    task_server = Node(
-        package='arm_mtc_tasks',
-        executable='task_server',
-        output='screen'
-    )
-
     joy_node = Node(
         package='joy',
         executable='joy_node',
@@ -111,7 +101,6 @@ def generate_launch_description():
         move_group_launch,
         static_virtual_joint_tfs_launch,
         moveit_servo_node,
-        # task_server,
         joy_node,
         operator_node
     ])

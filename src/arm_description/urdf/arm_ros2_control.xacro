@@ -7,52 +7,40 @@
             <param name="fake_sensor_commands">false</param>
         </hardware>
 
-        <joint name="arm_joint1">
+        <joint name="joint_1">
             <command_interface name="position"/>
             <state_interface name="position"/>
             <param name="servo_id">0</param>
         </joint>
 
-        <joint name="arm_joint2">
+        <joint name="joint_2">
             <command_interface name="position"/>
             <state_interface name="position"/>
             <param name="servo_id">1</param>
         </joint>
 
-        <joint name="arm_joint3">
+        <joint name="joint_3">
             <command_interface name="position"/>
             <state_interface name="position"/>
             <param name="servo_id">2</param>
         </joint>
 
-        <joint name="arm_joint4">
+        <joint name="joint_4">
             <command_interface name="position"/>
             <state_interface name="position"/>
             <param name="servo_id">3</param>
         </joint>
 
-        <joint name="arm_joint5">
+        <joint name="joint_5">
             <command_interface name="position"/>
             <state_interface name="position"/>
             <param name="servo_id">4</param>
         </joint>
 
-        <joint name="arm_joint6">
+        <joint name="joint_6">
             <command_interface name="position"/>
             <state_interface name="position"/>
             <param name="servo_id">5</param>
-        </joint>
-
-        <joint name="arm_joint7">
-            <command_interface name="position"/>
-            <state_interface name="position"/>
-            <param name="servo_id">6</param>
-        </joint>
-
-        <joint name="arm_finger_joint1">
-            <command_interface name="position"/>
-            <state_interface name="position"/>
-            <param name="servo_id">7</param>
         </joint>
     </ros2_control>
 

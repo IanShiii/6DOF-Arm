@@ -26,19 +26,6 @@ def generate_launch_description():
         output='screen',
     )
 
-    hand_controller_spawner = Node(
-        package='controller_manager',
-        executable='spawner',
-        arguments=[
-            'hand_controller',
-            '--controller-manager-timeout',
-            '300',
-            '--controller-manager',
-            '/controller_manager',
-        ],
-        output='screen',
-    )
-
     joint_state_broadcaster_spawner = Node(
         package='controller_manager',
         executable='spawner',
@@ -55,6 +42,5 @@ def generate_launch_description():
     return LaunchDescription([
         ros2_controller_manager_node,
         arm_controller_spawner,
-        hand_controller_spawner,
         joint_state_broadcaster_spawner
     ])
