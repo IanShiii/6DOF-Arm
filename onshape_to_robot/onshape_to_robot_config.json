@@ -29,6 +29,7 @@
 
     "ignore": {
         "*screw*": "all",
+        "*nut*": "all",
         "DIN_EN_ISO_4762_M2,5x25.ipt v2*": "all"
     }
 }
