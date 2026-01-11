@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "f13e364970d6baa9b84bee6e",
+    "documentMicroversion": "d6afbe5d26c9099b97384b00",
+    "documentVersion": "e373391fce88720bdcc190b6",
+    "elementId": "72293d32a9141e5e9d258223",
+    "fullConfiguration": "default",
+    "id": "MK1WXLfs5IOaeNty7",
+    "isStandardContent": false,
+    "name": "PCA9685 v18 <1>",
+    "partId": "KFjG",
+    "suppressed": false,
+    "type": "Part"
+}
