@@ -70,14 +70,12 @@ namespace hardware {
             double joint_6_target_degrees_;
 
             /**
-             * @brief Converts an angle in degrees to ticks for the PCA9685.
-             * @param angle Angle in radians [-2.35619, 2.35619] (-135 to 135 degrees)
+             * @brief Converts an angle in radians to ticks for the PCA9685.
+             * @param angle Angle in radians [0, 4.71239] (0 to 270 degrees)
              */
-            unsigned int angle_to_ticks(double degrees, bool inverted);
+            unsigned int angle_to_ticks(double radians, bool inverted);
 
-            /**
-             * @brief Clamps command values to [-2.35619, 2.35619] radians (-135 to 135 degrees, which are the limits for the servos).
-             */
-            void clamp_command_values();
+            bool is_within_limits(double joint_1_target_angle, double joint_2_target_angle, double joint_3_target_angle,
+                                  double joint_4_target_angle, double joint_5_target_angle, double joint_6_target_angle);
     };
 }

@@ -107,7 +107,12 @@ namespace hardware {
     }
 
     hardware_interface::return_type HardwareInterface::write([[maybe_unused]] const rclcpp::Time & time, [[maybe_unused]] const rclcpp::Duration & period) {
-        clamp_command_values();
+        if (!is_within_limits(joint_1_target_degrees_, joint_2_target_degrees_, joint_3_target_degrees_, joint_4_target_degrees_, joint_5_target_degrees_, joint_6_target_degrees_)) {
+            RCLCPP_ERROR(
+                rclcpp::get_logger("HardwareInterface"),
+                "One or more joint target angles are out of limits. Command not sent to servos.");
+            return hardware_interface::return_type::ERROR;
+        }
 
         pca.set_pwm(joint_1_servo_id_, 0, angle_to_ticks(joint_1_target_degrees_, joint_1_inverted_));
         pca.set_pwm(joint_2_servo_id_, 0, angle_to_ticks(joint_2_target_degrees_, joint_2_inverted_));
@@ -121,20 +126,21 @@ namespace hardware {
 
     unsigned int HardwareInterface::angle_to_ticks(double angle, bool inverted) {
         if (inverted) {
-            angle *= -1.0;
+            angle = 4.71239 - angle;
         }
-        double microseconds = 500 + ((angle + 2.35619) / 4.71238) * 2000.0; // 500us to 2500us
+        double microseconds = 500 + (angle / 4.71239 * 2000.0); // 500us to 2500us
         double microseconds_per_tick = 20000.0 / 4096.0; // 20ms period, 4096 ticks
         return (unsigned int)(microseconds / microseconds_per_tick);
     }
 
-    void HardwareInterface::clamp_command_values() {
-        joint_1_target_degrees_ = std::clamp(joint_1_target_degrees_, -135.0, 135.0);
-        joint_2_target_degrees_ = std::clamp(joint_2_target_degrees_, -135.0, 135.0);
-        joint_3_target_degrees_ = std::clamp(joint_3_target_degrees_, -135.0, 135.0);
-        joint_4_target_degrees_ = std::clamp(joint_4_target_degrees_, -135.0, 135.0);
-        joint_5_target_degrees_ = std::clamp(joint_5_target_degrees_, -135.0, 135.0);
-        joint_6_target_degrees_ = std::clamp(joint_6_target_degrees_, -135.0, 135.0);
+    bool HardwareInterface::is_within_limits(double joint_1_target_angle, double joint_2_target_angle, double joint_3_target_angle,
+                          double joint_4_target_angle, double joint_5_target_angle, double joint_6_target_angle) {
+        return (joint_1_target_angle >= joint_1_min_degrees_ && joint_1_target_angle <= joint_1_max_degrees_) &&
+               (joint_2_target_angle >= joint_2_min_degrees_ && joint_2_target_angle <= joint_2_max_degrees_) &&
+               (joint_3_target_angle >= joint_3_min_degrees_ && joint_3_target_angle <= joint_3_max_degrees_) &&
+               (joint_4_target_angle >= joint_4_min_degrees_ && joint_4_target_angle <= joint_4_max_degrees_) &&
+               (joint_5_target_angle >= joint_5_min_degrees_ && joint_5_target_angle <= joint_5_max_degrees_) &&
+               (joint_6_target_angle >= joint_6_min_degrees_ && joint_6_target_angle <= joint_6_max_degrees_);
     }
 }
 
