@@ -35,7 +35,6 @@ namespace hardware {
             int joint_4_servo_id_;
             int joint_5_servo_id_;
             int joint_6_servo_id_;
-            int gripper_servo_id_;
 
             // Inversions
 
@@ -61,11 +60,6 @@ namespace hardware {
             double joint_6_min_degrees_;
             double joint_6_max_degrees_;
 
-            // Gripper Angles
-
-            double gripper_closed_degrees_;
-            double gripper_open_degrees_;
-
             // Targets
 
             double joint_1_target_degrees_;
@@ -74,7 +68,6 @@ namespace hardware {
             double joint_4_target_degrees_;
             double joint_5_target_degrees_;
             double joint_6_target_degrees_;
-            double gripper_closed_; // 1.0 = closed, 0.0 = open
 
             /**
              * @brief Converts an angle in degrees to ticks for the PCA9685.
