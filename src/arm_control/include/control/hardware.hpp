@@ -1,6 +1,7 @@
 #pragma once
 
 #include <PiPCA9685/PCA9685.h>
+#include <cmath>
 
 #include "pluginlib/class_list_macros.hpp"
 #include "hardware_interface/system_interface.hpp"
@@ -36,15 +37,6 @@ namespace hardware {
             int joint_5_servo_id_;
             int joint_6_servo_id_;
 
-            // Inversions
-
-            bool joint_1_inverted_;
-            bool joint_2_inverted_;
-            bool joint_3_inverted_;
-            bool joint_4_inverted_;
-            bool joint_5_inverted_;
-            bool joint_6_inverted_;
-
             // Limits
 
             double joint_1_min_degrees_;
@@ -69,13 +61,31 @@ namespace hardware {
             double joint_5_target_degrees_;
             double joint_6_target_degrees_;
 
+            // PWM microseconds for 0 and 180 degrees
+            const double joint_1_microseconds_for_0_degrees_ = 590.0;
+            const double joint_1_microseconds_for_180_degrees_ = 2030.0;
+
+            const double joint_2_microseconds_for_0_degrees_ = 500.0;
+            const double joint_2_microseconds_for_180_degrees_ = 1667.0;
+
+            const double joint_3_microseconds_for_0_degrees_ = 500.0;
+            const double joint_3_microseconds_for_180_degrees_ = 1667.0;
+
+            const double joint_4_microseconds_for_0_degrees_ = 500.0;
+            const double joint_4_microseconds_for_180_degrees_ = 1667.0;
+
+            const double joint_5_microseconds_for_0_degrees_ = 500.0;
+            const double joint_5_microseconds_for_180_degrees_ = 1667.0;
+
+            const double joint_6_microseconds_for_0_degrees_ = 500.0;
+            const double joint_6_microseconds_for_180_degrees_ = 1667.0;
+
             /**
              * @brief Converts an angle in radians to ticks for the PCA9685.
              * @param angle Angle in radians [0, 4.71239] (0 to 270 degrees)
              */
-            unsigned int angle_to_ticks(double radians, bool inverted);
+            unsigned int angle_to_ticks(double radians, double microseconds_for_0_degrees, double microseconds_for_180_degrees);
 
-            bool is_within_limits(double joint_1_target_angle, double joint_2_target_angle, double joint_3_target_angle,
-                                  double joint_4_target_angle, double joint_5_target_angle, double joint_6_target_angle);
+            void clamp_to_limits();
     };
 }
