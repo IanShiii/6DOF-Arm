@@ -65,19 +65,19 @@ namespace hardware {
             const double joint_1_microseconds_for_0_degrees_ = 590.0;
             const double joint_1_microseconds_for_180_degrees_ = 2030.0;
 
-            const double joint_2_microseconds_for_0_degrees_ = 500.0;
-            const double joint_2_microseconds_for_180_degrees_ = 1667.0;
+            const double joint_2_microseconds_for_0_degrees_ = 630.0;
+            const double joint_2_microseconds_for_180_degrees_ = 2090.0;
 
-            const double joint_3_microseconds_for_0_degrees_ = 500.0;
-            const double joint_3_microseconds_for_180_degrees_ = 1667.0;
+            const double joint_3_microseconds_for_0_degrees_ = 610.0;
+            const double joint_3_microseconds_for_180_degrees_ = 2065.0;
 
-            const double joint_4_microseconds_for_0_degrees_ = 500.0;
-            const double joint_4_microseconds_for_180_degrees_ = 1667.0;
+            const double joint_4_microseconds_for_0_degrees_ = 590.0;
+            const double joint_4_microseconds_for_180_degrees_ = 2030.0;
 
-            const double joint_5_microseconds_for_0_degrees_ = 500.0;
-            const double joint_5_microseconds_for_180_degrees_ = 1667.0;
+            const double joint_5_microseconds_for_0_degrees_ = 590.0;
+            const double joint_5_microseconds_for_180_degrees_ = 2030.0;
 
-            const double joint_6_microseconds_for_0_degrees_ = 500.0;
+            const double joint_6_microseconds_for_0_degrees_ = 590.0;
             const double joint_6_microseconds_for_180_degrees_ = 1667.0;
 
             /**
