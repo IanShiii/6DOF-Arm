@@ -4,7 +4,6 @@ from sensor_msgs.msg import Joy
 from control_msgs.msg import JointJog
 from geometry_msgs.msg import TwistStamped
 from geometry_msgs.msg import PoseStamped
-from geometry_msgs.msg import Pose
 from moveit_msgs.srv import ServoCommandType
 from trajectory_msgs.msg import JointTrajectory
 from trajectory_msgs.msg import JointTrajectoryPoint
