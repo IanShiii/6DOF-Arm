@@ -59,37 +59,37 @@ class Operator(Node):
         joint_jog.header.frame_id = 'world'
         joint_jog.joint_names = ['joint_1', 'joint_2', 'joint_3', 'joint_4', 'joint_5', 'joint_6']
         joint_jog.velocities = [0.0] * 6
-        joint_jog.duration = 0.25  # seconds
+        joint_jog.duration = 0.5  # seconds
 
-        if (msg.axes[1] == 1):  # dpad up
-            joint_jog.velocities[0] = 0.1
-        elif (msg.axes[1] == -1):  # dpad down
-            joint_jog.velocities[0] = -0.1
+        if (msg.axes[5] == 1):  # dpad up
+            joint_jog.velocities[0] = 0.3
+        elif (msg.axes[5] == -1):  # dpad down
+            joint_jog.velocities[0] = -0.3
 
         if (msg.axes[0] == 1):  # dpad left
-            joint_jog.velocities[1] = 0.1
+            joint_jog.velocities[1] = 0.3
         elif (msg.axes[0] == -1):  # dpad right
-            joint_jog.velocities[1] = -0.1
+            joint_jog.velocities[1] = -0.3
 
         if (msg.buttons[3]):  # y button
-            joint_jog.velocities[2] = 0.1
+            joint_jog.velocities[2] = 0.3
         elif (msg.buttons[1]):  # a button
-            joint_jog.velocities[2] = -0.1
+            joint_jog.velocities[2] = -0.3
 
         if (msg.buttons[2]):  # b button
-            joint_jog.velocities[3] = 0.1
+            joint_jog.velocities[3] = 0.3
         elif (msg.buttons[0]):  # x button
-            joint_jog.velocities[3] = -0.1
+            joint_jog.velocities[3] = -0.3
 
         if (msg.axes[1] == 1):  # left joystick up
-            joint_jog.velocities[4] = 0.1
+            joint_jog.velocities[4] = 0.3
         elif (msg.axes[1] == -1):  # left joystick down
-            joint_jog.velocities[4] = -0.1
+            joint_jog.velocities[4] = -0.3
 
         if (msg.axes[3] == 1):  # right joystick up
-            joint_jog.velocities[5] = 0.1
+            joint_jog.velocities[5] = 0.3
         elif (msg.axes[3] == -1):  # right joystick down
-            joint_jog.velocities[5] = -0.1
+            joint_jog.velocities[5] = -0.3
 
         self.joint_jog_publisher.publish(joint_jog)
         self.get_logger().info('Published Joint Jog Command')
