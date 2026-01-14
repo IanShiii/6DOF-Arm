@@ -12,7 +12,7 @@
     <!-- Part ph_pan_head_screw_m2x0_40_x_18__e892a708fe3a418cf40ac0100f4b190f -->
     <!-- Part base -->
     <visual>
-      <origin xyz="0 9.14136e-05 0.08" rpy="0 -0 0"/>
+      <origin xyz="-4.13721e-18 9.14136e-05 0.08" rpy="0 -0 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/base.stl"/>
       </geometry>
@@ -21,7 +21,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 9.14136e-05 0.08" rpy="0 -0 0"/>
+      <origin xyz="-4.13721e-18 9.14136e-05 0.08" rpy="0 -0 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/base.stl"/>
       </geometry>
@@ -61,7 +61,7 @@
     <!-- Part din_en_iso_4762_m2_5x25_ipt_v2_4 -->
     <!-- Part servo_base -->
     <visual>
-      <origin xyz="1.249e-16 -0.0119086 0.068" rpy="1.5708 1.5708 0"/>
+      <origin xyz="4.07245e-18 -0.0119086 0.068" rpy="1.5708 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/servo_base.stl"/>
       </geometry>
@@ -70,7 +70,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="1.249e-16 -0.0119086 0.068" rpy="1.5708 1.5708 0"/>
+      <origin xyz="4.07245e-18 -0.0119086 0.068" rpy="1.5708 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/servo_base.stl"/>
       </geometry>
@@ -79,13 +79,13 @@
   <!-- Link link_1 -->
   <link name="link_1">
     <inertial>
-      <origin xyz="-0.000718929 -0.000241833 -0.0163872" rpy="0 0 0"/>
-      <mass value="0.368704"/>
-      <inertia ixx="0.000478074" ixy="6.4126e-08" ixz="2.48829e-06" iyy="0.00031029" iyz="-1.44837e-06" izz="0.000662305"/>
+      <origin xyz="-0.000786667 0.00161245 0.0144578" rpy="0 0 0"/>
+      <mass value="0.336956"/>
+      <inertia ixx="0.00040334" ixy="-4.27416e-07" ixz="-1.97684e-06" iyy="0.000285713" iyz="-7.50728e-06" izz="0.000595346"/>
     </inertial>
     <!-- Part joint_2_connecter2 -->
     <visual>
-      <origin xyz="-3.40168e-17 -4.97131e-05 -0.0045" rpy="3.14159 -5.48055e-16 -3.14159"/>
+      <origin xyz="-2.0755e-18 4.97131e-05 0.0045" rpy="3.77136e-16 4.13813e-16 -3.14159"/>
       <geometry>
         <mesh filename="package://arm_description/assets/joint_2_connecter2.stl"/>
       </geometry>
@@ -94,20 +94,20 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-3.40168e-17 -4.97131e-05 -0.0045" rpy="3.14159 -5.48055e-16 -3.14159"/>
+      <origin xyz="-2.0755e-18 4.97131e-05 0.0045" rpy="3.77136e-16 4.13813e-16 -3.14159"/>
       <geometry>
         <mesh filename="package://arm_description/assets/joint_2_connecter2.stl"/>
       </geometry>
     </collision>
+    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c -->
     <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_7 -->
     <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_8 -->
+    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_2 -->
     <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_9 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_10 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_11 -->
     <!-- Part ph_pan_head_screw_m3x0_50_x_16__783e59ccdfb4992b21648f4a6e255603 -->
     <!-- Part wheel_gear_v6 -->
     <visual>
-      <origin xyz="0 1.69407e-21 0.0055" rpy="-1.5708 -8.62817e-32 -1.18777e-17"/>
+      <origin xyz="0 6.77626e-19 -0.0055" rpy="1.5708 4.80235e-33 -1.24183e-30"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_gear_v6.stl"/>
       </geometry>
@@ -116,14 +116,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 1.69407e-21 0.0055" rpy="-1.5708 -8.62817e-32 -1.18777e-17"/>
+      <origin xyz="0 6.77626e-19 -0.0055" rpy="1.5708 4.80235e-33 -1.24183e-30"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_gear_v6.stl"/>
       </geometry>
     </collision>
     <!-- Part base_cover -->
     <visual>
-      <origin xyz="-3.07642e-18 -3.25938e-17 -0.0045" rpy="3.14159 1.10934e-31 2.02375e-17"/>
+      <origin xyz="-2.06907e-18 -6.88468e-18 0.0045" rpy="-9.87758e-16 -4.13813e-16 1.29342e-16"/>
       <geometry>
         <mesh filename="package://arm_description/assets/base_cover.stl"/>
       </geometry>
@@ -132,17 +132,17 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-3.07642e-18 -3.25938e-17 -0.0045" rpy="3.14159 1.10934e-31 2.02375e-17"/>
+      <origin xyz="-2.06907e-18 -6.88468e-18 0.0045" rpy="-9.87758e-16 -4.13813e-16 1.29342e-16"/>
       <geometry>
         <mesh filename="package://arm_description/assets/base_cover.stl"/>
       </geometry>
     </collision>
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_12 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_13 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_14 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_6__500490dbd18317df19b0482cf3b5d3b6 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_10 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_11 -->
     <!-- Part joint_2_connecter1 -->
     <visual>
-      <origin xyz="1.24683e-17 -4.97131e-05 -0.0045" rpy="3.14159 -5.48055e-16 -3.14159"/>
+      <origin xyz="-2.0755e-18 4.97131e-05 0.0045" rpy="3.77136e-16 4.13813e-16 -3.14159"/>
       <geometry>
         <mesh filename="package://arm_description/assets/joint_2_connecter1.stl"/>
       </geometry>
@@ -151,21 +151,21 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="1.24683e-17 -4.97131e-05 -0.0045" rpy="3.14159 -5.48055e-16 -3.14159"/>
+      <origin xyz="-2.0755e-18 4.97131e-05 0.0045" rpy="3.77136e-16 4.13813e-16 -3.14159"/>
       <geometry>
         <mesh filename="package://arm_description/assets/joint_2_connecter1.stl"/>
       </geometry>
     </collision>
-    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_15 -->
-    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_2 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_16 -->
-    <!-- Part ph_pan_head_screw_m3x0_50_x_16__783e59ccdfb4992b21648f4a6e255603_2 -->
-    <!-- Part ph_pan_head_screw_m3x0_50_x_16__783e59ccdfb4992b21648f4a6e255603_3 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_12 -->
     <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_3 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_17 -->
+    <!-- Part ph_pan_head_screw_m3x0_50_x_16__783e59ccdfb4992b21648f4a6e255603_2 -->
     <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_4 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_18 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_6__500490dbd18317df19b0482cf3b5d3b6_2 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_6__500490dbd18317df19b0482cf3b5d3b6_3 -->
+    <!-- Part ph_pan_head_screw_m3x0_50_x_16__783e59ccdfb4992b21648f4a6e255603_3 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_6__500490dbd18317df19b0482cf3b5d3b6_4 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_13 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_14 -->
     <!-- Part ph_pan_head_screw_m3x0_50_x_16__783e59ccdfb4992b21648f4a6e255603_4 -->
     <!-- Part din_en_iso_4762_m2_5x25_ipt_v2_5 -->
     <!-- Part din_en_iso_4762_m2_5x25_ipt_v2_6 -->
@@ -173,7 +173,7 @@
     <!-- Part din_en_iso_4762_m2_5x25_ipt_v2_8 -->
     <!-- Part servo_base_2 -->
     <visual>
-      <origin xyz="-3.61581e-17 0.0240746 -0.0795" rpy="-3.14159 -4.21459e-16 -1.5708"/>
+      <origin xyz="-3.34274e-17 -0.0240746 0.0795" rpy="-4.66678e-16 9.87758e-16 1.5708"/>
       <geometry>
         <mesh filename="package://arm_description/assets/servo_base__2.stl"/>
       </geometry>
@@ -182,7 +182,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-3.61581e-17 0.0240746 -0.0795" rpy="-3.14159 -4.21459e-16 -1.5708"/>
+      <origin xyz="-3.34274e-17 -0.0240746 0.0795" rpy="-4.66678e-16 9.87758e-16 1.5708"/>
       <geometry>
         <mesh filename="package://arm_description/assets/servo_base__2.stl"/>
       </geometry>
@@ -191,14 +191,14 @@
   <!-- Link link_2 -->
   <link name="link_2">
     <inertial>
-      <origin xyz="-0.083 1.03674e-16 -0.03175" rpy="0 0 0"/>
+      <origin xyz="-0.083 8.53749e-19 -0.03175" rpy="0 0 0"/>
       <mass value="0.014882"/>
-      <inertia ixx="1.0566e-05" ixy="6.09864e-20" ixz="-6.96685e-20" iyy="6.13828e-05" iyz="5.45277e-21" izz="5.38966e-05"/>
+      <inertia ixx="1.0566e-05" ixy="3.89106e-21" ixz="-4.34104e-21" iyy="6.13828e-05" iyz="3.70577e-22" izz="5.38966e-05"/>
     </inertial>
     <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_5 -->
     <!-- Part link__rotation_default_length__cm___10 -->
     <visual>
-      <origin xyz="-0.033 5.55112e-17 -0.03175" rpy="-3.14159 1.5708 0"/>
+      <origin xyz="-0.033 0 -0.03175" rpy="-3.14159 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/link__rotation_default_length__cm___10.stl"/>
       </geometry>
@@ -207,7 +207,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.033 5.55112e-17 -0.03175" rpy="-3.14159 1.5708 0"/>
+      <origin xyz="-0.033 0 -0.03175" rpy="-3.14159 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/link__rotation_default_length__cm___10.stl"/>
       </geometry>
@@ -236,7 +236,7 @@
     <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_7 -->
     <!-- Part wheel_gear_v6_2 -->
     <visual>
-      <origin xyz="0 0 -0.0055" rpy="1.5708 -8.34327e-18 -2.96271e-18"/>
+      <origin xyz="0 0 -0.0055" rpy="1.5708 -9.22061e-31 -3.24623e-31"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_gear_v6__2.stl"/>
       </geometry>
@@ -245,7 +245,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 -0.0055" rpy="1.5708 -8.34327e-18 -2.96271e-18"/>
+      <origin xyz="0 0 -0.0055" rpy="1.5708 -9.22061e-31 -3.24623e-31"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_gear_v6__2.stl"/>
       </geometry>
@@ -278,7 +278,7 @@
     <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_17 -->
     <!-- Part wheel_gear_v6_3 -->
     <visual>
-      <origin xyz="-0.166 1.66533e-16 -0.0055" rpy="1.5708 3.03488e-16 -3.14159"/>
+      <origin xyz="-0.166 0 -0.0055" rpy="1.5708 -1.51735e-16 -3.14159"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_gear_v6__2.stl"/>
       </geometry>
@@ -287,7 +287,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.166 1.66533e-16 -0.0055" rpy="1.5708 3.03488e-16 -3.14159"/>
+      <origin xyz="-0.166 0 -0.0055" rpy="1.5708 -1.51735e-16 -3.14159"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_gear_v6__2.stl"/>
       </geometry>
@@ -297,7 +297,7 @@
     <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_20 -->
     <!-- Part large_support_2 -->
     <visual>
-      <origin xyz="-0.133 -0.015 0.0015" rpy="2.45437e-16 1.5708 0"/>
+      <origin xyz="-0.133 -0.015 0.0015" rpy="-5.55112e-17 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/large_support.stl"/>
       </geometry>
@@ -306,14 +306,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.133 -0.015 0.0015" rpy="2.45437e-16 1.5708 0"/>
+      <origin xyz="-0.133 -0.015 0.0015" rpy="-5.55112e-17 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/large_support.stl"/>
       </geometry>
     </collision>
     <!-- Part 6mm_bearing_v2 -->
     <visual>
-      <origin xyz="-3.46945e-17 5.55112e-17 -0.0595" rpy="1.5708 -1.5708 0"/>
+      <origin xyz="-1.38964e-16 5.55112e-17 -0.0595" rpy="1.5708 -1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/6mm_bearing_v2.stl"/>
       </geometry>
@@ -322,14 +322,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-3.46945e-17 5.55112e-17 -0.0595" rpy="1.5708 -1.5708 0"/>
+      <origin xyz="-1.38964e-16 5.55112e-17 -0.0595" rpy="1.5708 -1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/6mm_bearing_v2.stl"/>
       </geometry>
     </collision>
     <!-- Part wheel_v5 -->
     <visual>
-      <origin xyz="9.1073e-17 5.55112e-17 -0.058" rpy="-1.5708 -4.83834e-16 -3.14159"/>
+      <origin xyz="-1.15516e-18 0 -0.058" rpy="-1.5708 -2.2352e-17 -3.14159"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_v5.stl"/>
       </geometry>
@@ -338,14 +338,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="9.1073e-17 5.55112e-17 -0.058" rpy="-1.5708 -4.83834e-16 -3.14159"/>
+      <origin xyz="-1.15516e-18 0 -0.058" rpy="-1.5708 -2.2352e-17 -3.14159"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_v5.stl"/>
       </geometry>
     </collision>
     <!-- Part 6mm_bearing_v2_2 -->
     <visual>
-      <origin xyz="-0.166 5.27356e-16 -0.0595" rpy="-1.5708 -1.5708 0"/>
+      <origin xyz="-0.166 2.498e-16 -0.0595" rpy="-1.5708 -1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/6mm_bearing_v2.stl"/>
       </geometry>
@@ -354,14 +354,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.166 5.27356e-16 -0.0595" rpy="-1.5708 -1.5708 0"/>
+      <origin xyz="-0.166 2.498e-16 -0.0595" rpy="-1.5708 -1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/6mm_bearing_v2.stl"/>
       </geometry>
     </collision>
     <!-- Part wheel_v5_2 -->
     <visual>
-      <origin xyz="-0.166 1.94289e-16 -0.058" rpy="-1.5708 2.38713e-16 6.63488e-17"/>
+      <origin xyz="-0.166 2.77556e-17 -0.058" rpy="-1.5708 1.97361e-15 5.55112e-17"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_v5.stl"/>
       </geometry>
@@ -370,7 +370,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.166 1.94289e-16 -0.058" rpy="-1.5708 2.38713e-16 6.63488e-17"/>
+      <origin xyz="-0.166 2.77556e-17 -0.058" rpy="-1.5708 1.97361e-15 5.55112e-17"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_v5.stl"/>
       </geometry>
@@ -379,13 +379,13 @@
   <!-- Link link_3 -->
   <link name="link_3">
     <inertial>
-      <origin xyz="-0.0909337 0.0653839 0.0300704" rpy="0 0 0"/>
+      <origin xyz="1.00509e-05 0.112 0.0300711" rpy="0 0 0"/>
       <mass value="0.0138515"/>
-      <inertia ixx="2.12397e-05" ixy="1.83443e-05" ixz="2.19412e-09" iyy="3.35571e-05" iyz="-6.75456e-09" izz="4.18387e-05"/>
+      <inertia ixx="4.67494e-05" ixy="-6.09569e-09" ixz="-4.50431e-09" iyy="8.04844e-06" iyz="-6.12919e-09" izz="4.18389e-05"/>
     </inertial>
     <!-- Part link__rotation_default_length__cm___10_2 -->
     <visual>
-      <origin xyz="-0.131537 0.0945622 0.0315" rpy="0.623299 1.5708 0"/>
+      <origin xyz="-2.41474e-15 0.162 0.0315" rpy="1.5708 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/link__rotation_default_length__cm___10.stl"/>
       </geometry>
@@ -394,18 +394,18 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.131537 0.0945622 0.0315" rpy="0.623299 1.5708 0"/>
+      <origin xyz="-2.41474e-15 0.162 0.0315" rpy="1.5708 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/link__rotation_default_length__cm___10.stl"/>
       </geometry>
     </collision>
     <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_9 -->
     <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_13 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_19 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_20 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_15 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_16 -->
     <!-- Part small_support -->
     <visual>
-      <origin xyz="-0.140293 0.0823828 0.0575" rpy="0.623299 1.5708 0"/>
+      <origin xyz="-0.015 0.162 0.0575" rpy="1.5708 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/small_support.stl"/>
       </geometry>
@@ -414,24 +414,24 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.140293 0.0823828 0.0575" rpy="0.623299 1.5708 0"/>
+      <origin xyz="-0.015 0.162 0.0575" rpy="1.5708 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/small_support.stl"/>
       </geometry>
     </collision>
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_21 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_17 -->
     <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_14 -->
     <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_15 -->
     <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_10 -->
     <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_16 -->
     <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_11 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_22 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_23 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_18 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_19 -->
     <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_12 -->
     <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_13 -->
     <!-- Part small_support_2 -->
     <visual>
-      <origin xyz="-0.0415856 0.0483698 0.0575" rpy="-2.51829 1.5708 0"/>
+      <origin xyz="0.015 0.062 0.0575" rpy="-1.5708 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/small_support.stl"/>
       </geometry>
@@ -440,22 +440,22 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.0415856 0.0483698 0.0575" rpy="-2.51829 1.5708 0"/>
+      <origin xyz="0.015 0.062 0.0575" rpy="-1.5708 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/small_support.stl"/>
       </geometry>
     </collision>
     <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_14 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_24 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_20 -->
     <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_17 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_25 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_26 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_21 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_22 -->
     <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_18 -->
     <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_15 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_27 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_23 -->
     <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_19 -->
     <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_16 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_28 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_24 -->
     <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_20 -->
     <!-- Part din_en_iso_4762_m2_5x25_ipt_v2_9 -->
     <!-- Part din_en_iso_4762_m2_5x25_ipt_v2_10 -->
@@ -463,7 +463,7 @@
     <!-- Part din_en_iso_4762_m2_5x25_ipt_v2_12 -->
     <!-- Part servo_base_3 -->
     <visual>
-      <origin xyz="-0.191622 0.137757 0.0075" rpy="-0.623299 -1.5708 0"/>
+      <origin xyz="-3.88578e-15 0.236 0.0555" rpy="-1.5708 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/servo_base__2.stl"/>
       </geometry>
@@ -472,7 +472,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.191622 0.137757 0.0075" rpy="-0.623299 -1.5708 0"/>
+      <origin xyz="-3.88578e-15 0.236 0.0555" rpy="-1.5708 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/servo_base__2.stl"/>
       </geometry>
@@ -483,7 +483,7 @@
     <!-- Part din_en_iso_4762_m2_5x25_ipt_v2_16 -->
     <!-- Part servo_base_4 -->
     <visual>
-      <origin xyz="0.00974349 -0.0070046 0.0075" rpy="2.51829 -1.5708 0"/>
+      <origin xyz="1.38778e-16 -0.012 0.0075" rpy="1.5708 -1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/servo_base__2.stl"/>
       </geometry>
@@ -492,7 +492,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0.00974349 -0.0070046 0.0075" rpy="2.51829 -1.5708 0"/>
+      <origin xyz="1.38778e-16 -0.012 0.0075" rpy="1.5708 -1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/servo_base__2.stl"/>
       </geometry>
@@ -501,17 +501,20 @@
   <!-- Link link_4 -->
   <link name="link_4">
     <inertial>
-      <origin xyz="0.0291771 0.00219189 0.03175" rpy="0 0 0"/>
-      <mass value="0.00854202"/>
-      <inertia ixx="4.74586e-06" ixy="3.0838e-07" ixz="4.32815e-09" iyy="5.58916e-06" iyz="4.99369e-10" izz="4.22117e-06"/>
+      <origin xyz="-0.0546866 -0.000693703 -0.0317694" rpy="0 0 0"/>
+      <mass value="0.0143668"/>
+      <inertia ixx="9.34465e-06" ixy="-6.40964e-07" ixz="-1.79607e-09" iyy="2.07106e-05" iyz="8.8039e-09" izz="1.94286e-05"/>
     </inertial>
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_29 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_25 -->
     <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_21 -->
-    <!-- Part ph_pan_head_screw_m3x0_50_x_6__b32648e3119e9bfb9d9baf1e22451401 -->
-    <!-- Part ph_pan_head_screw_m3x0_50_x_6__b32648e3119e9bfb9d9baf1e22451401_2 -->
+    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_17 -->
+    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_22 -->
+    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_23 -->
+    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_18 -->
+    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_19 -->
     <!-- Part small_support_3 -->
     <visual>
-      <origin xyz="0.0298025 0.029611 0.01675" rpy="1.5708 6.31754e-15 -1.45593"/>
+      <origin xyz="-0.083 0.026 -0.01675" rpy="-1.5708 -1.42507e-15 -1.5708"/>
       <geometry>
         <mesh filename="package://arm_description/assets/small_support.stl"/>
       </geometry>
@@ -520,27 +523,48 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0.0298025 0.029611 0.01675" rpy="1.5708 6.31754e-15 -1.45593"/>
+      <origin xyz="-0.083 0.026 -0.01675" rpy="-1.5708 -1.42507e-15 -1.5708"/>
       <geometry>
         <mesh filename="package://arm_description/assets/small_support.stl"/>
       </geometry>
     </collision>
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_30 -->
-    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_22 -->
-    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_23 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_31 -->
-    <!-- Part ph_pan_head_screw_m3x0_50_x_6__b32648e3119e9bfb9d9baf1e22451401_3 -->
-    <!-- Part ph_pan_head_screw_m3x0_50_x_6__b32648e3119e9bfb9d9baf1e22451401_4 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_32 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_26 -->
+    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_20 -->
     <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_24 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_33 -->
+    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_21 -->
+    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_25 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_27 -->
+    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_26 -->
+    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_27 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_28 -->
+    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_22 -->
+    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_28 -->
+    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_23 -->
+    <!-- Part link__9b93bac3b3b26990f011e90599b8f64f -->
+    <visual>
+      <origin xyz="-0.033 1.66533e-16 -0.03175" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://arm_description/assets/link__9b93bac3b3b26990f011e90599b8f64f.stl"/>
+      </geometry>
+      <material name="link__9b93bac3b3b26990f011e90599b8f64f_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.033 1.66533e-16 -0.03175" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://arm_description/assets/link__9b93bac3b3b26990f011e90599b8f64f.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_24 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_29 -->
     <!-- Part din_en_iso_4762_m2_5x25_ipt_v2_17 -->
     <!-- Part din_en_iso_4762_m2_5x25_ipt_v2_18 -->
     <!-- Part din_en_iso_4762_m2_5x25_ipt_v2_19 -->
     <!-- Part din_en_iso_4762_m2_5x25_ipt_v2_20 -->
     <!-- Part servo_base_5 -->
     <visual>
-      <origin xyz="0.109046 -0.0115779 0.03175" rpy="1.5708 -6.36562e-15 1.68567"/>
+      <origin xyz="-0.157 -0.024 -0.03175" rpy="-1.5708 1.53609e-15 1.5708"/>
       <geometry>
         <mesh filename="package://arm_description/assets/servo_base__2.stl"/>
       </geometry>
@@ -549,7 +573,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0.109046 -0.0115779 0.03175" rpy="1.5708 -6.36562e-15 1.68567"/>
+      <origin xyz="-0.157 -0.024 -0.03175" rpy="-1.5708 1.53609e-15 1.5708"/>
       <geometry>
         <mesh filename="package://arm_description/assets/servo_base__2.stl"/>
       </geometry>
@@ -563,7 +587,7 @@
     <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_27 -->
     <!-- Part wheel_gear_v6_4 -->
     <visual>
-      <origin xyz="7.80626e-17 5.55112e-17 0.0055" rpy="-1.5708 -4.50659e-15 -3.02672"/>
+      <origin xyz="5.55112e-17 -5.55112e-17 -0.0055" rpy="1.5708 3.21625e-16 -7.14193e-15"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_gear_v6__2.stl"/>
       </geometry>
@@ -572,7 +596,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="7.80626e-17 5.55112e-17 0.0055" rpy="-1.5708 -4.50659e-15 -3.02672"/>
+      <origin xyz="5.55112e-17 -5.55112e-17 -0.0055" rpy="1.5708 3.21625e-16 -7.14193e-15"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_gear_v6__2.stl"/>
       </geometry>
@@ -582,7 +606,7 @@
     <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_30 -->
     <!-- Part large_support_3 -->
     <visual>
-      <origin xyz="0.0310633 0.0186835 -0.0015" rpy="-3.02672 -1.5708 0"/>
+      <origin xyz="-0.033 0.015 0.0015" rpy="-3.14159 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/large_support.stl"/>
       </geometry>
@@ -591,14 +615,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0.0310633 0.0186835 -0.0015" rpy="-3.02672 -1.5708 0"/>
+      <origin xyz="-0.033 0.015 0.0015" rpy="-3.14159 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/large_support.stl"/>
       </geometry>
     </collision>
     <!-- Part 6mm_bearing_v2_3 -->
     <visual>
-      <origin xyz="-2.2031e-16 8.32667e-16 0.0595" rpy="1.45593 1.5708 0"/>
+      <origin xyz="2.77556e-16 1.33227e-15 -0.0595" rpy="1.5708 -1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/6mm_bearing_v2.stl"/>
       </geometry>
@@ -607,14 +631,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-2.2031e-16 8.32667e-16 0.0595" rpy="1.45593 1.5708 0"/>
+      <origin xyz="2.77556e-16 1.33227e-15 -0.0595" rpy="1.5708 -1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/6mm_bearing_v2.stl"/>
       </geometry>
     </collision>
     <!-- Part wheel_v5_3 -->
     <visual>
-      <origin xyz="1.89085e-16 -5.55112e-17 0.058" rpy="1.5708 4.32246e-15 0.114869"/>
+      <origin xyz="2.77556e-17 -5.55112e-17 -0.058" rpy="-1.5708 -5.50545e-16 3.14159"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_v5.stl"/>
       </geometry>
@@ -623,7 +647,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="1.89085e-16 -5.55112e-17 0.058" rpy="1.5708 4.32246e-15 0.114869"/>
+      <origin xyz="2.77556e-17 -5.55112e-17 -0.058" rpy="-1.5708 -5.50545e-16 3.14159"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_v5.stl"/>
       </geometry>
@@ -632,49 +656,49 @@
   <!-- Link link_5 -->
   <link name="link_5">
     <inertial>
-      <origin xyz="-0.0546866 0.000702753 0.0317409" rpy="0 0 0"/>
+      <origin xyz="-0.0691487 -0.000703393 -0.0317403" rpy="0 0 0"/>
       <mass value="0.0143668"/>
-      <inertia ixx="9.31802e-06" ixy="6.38952e-07" ixz="-2.33421e-09" iyy="2.06986e-05" iyz="3.92592e-09" izz="1.94139e-05"/>
+      <inertia ixx="9.31859e-06" ixy="-7.91652e-07" ixz="1.66653e-10" iyy="3.69436e-05" iyz="4.20691e-09" izz="3.56587e-05"/>
     </inertial>
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_34 -->
-    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_25 -->
-    <!-- Part link__9b93bac3b3b26990f011e90599b8f64f -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_30 -->
+    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_29 -->
+    <!-- Part link__rotation_perpendicular_length__cm___8 -->
     <visual>
-      <origin xyz="-0.033 2.77556e-17 0.03175" rpy="1.43535e-16 -1.5708 0"/>
+      <origin xyz="-0.033 1.59595e-16 -0.03175" rpy="-3.14159 1.5708 0"/>
       <geometry>
-        <mesh filename="package://arm_description/assets/link__9b93bac3b3b26990f011e90599b8f64f.stl"/>
+        <mesh filename="package://arm_description/assets/link__rotation_perpendicular_length__cm___8.stl"/>
       </geometry>
-      <material name="link__9b93bac3b3b26990f011e90599b8f64f_material">
+      <material name="link__rotation_perpendicular_length__cm___8_material">
         <color rgba="0.647059 0.647059 0.647059 1"/>
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.033 2.77556e-17 0.03175" rpy="1.43535e-16 -1.5708 0"/>
+      <origin xyz="-0.033 1.59595e-16 -0.03175" rpy="-3.14159 1.5708 0"/>
       <geometry>
-        <mesh filename="package://arm_description/assets/link__9b93bac3b3b26990f011e90599b8f64f.stl"/>
+        <mesh filename="package://arm_description/assets/link__rotation_perpendicular_length__cm___8.stl"/>
       </geometry>
     </collision>
-    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_26 -->
-    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_17 -->
-    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_27 -->
-    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_28 -->
-    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_18 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_35 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_36 -->
-    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_19 -->
-    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_20 -->
-    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_29 -->
-    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_21 -->
     <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_30 -->
-    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_22 -->
-    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_23 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_37 -->
-    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_38 -->
+    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_25 -->
     <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_31 -->
-    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_24 -->
+    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_32 -->
+    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_26 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_31 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_32 -->
+    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_27 -->
+    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_28 -->
+    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_33 -->
+    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_29 -->
+    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_34 -->
+    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_30 -->
+    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_31 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_33 -->
+    <!-- Part ph_pan_head_screw_m2_5x0_45_x_5__7fa1fce1761ec0205aecddd7e6f541bd_34 -->
+    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_35 -->
+    <!-- Part ph_pan_head_screw_m3x0_50_x_10__f9471002c7d2be787504e53f034b0545_32 -->
     <!-- Part small_support_4 -->
     <visual>
-      <origin xyz="-0.083 -0.026 0.01675" rpy="1.5708 -1.23811e-16 1.5708"/>
+      <origin xyz="-0.113 0.026 -0.01675" rpy="-1.5708 1.01283e-14 -1.5708"/>
       <geometry>
         <mesh filename="package://arm_description/assets/small_support.stl"/>
       </geometry>
@@ -683,12 +707,12 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.083 -0.026 0.01675" rpy="1.5708 -1.23811e-16 1.5708"/>
+      <origin xyz="-0.113 0.026 -0.01675" rpy="-1.5708 1.01283e-14 -1.5708"/>
       <geometry>
         <mesh filename="package://arm_description/assets/small_support.stl"/>
       </geometry>
     </collision>
-    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_32 -->
+    <!-- Part hex_nut_grade_a___b_m3x0_5__efee9957898a49f0fc3bee2ce194c05c_36 -->
     <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_31 -->
     <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_32 -->
     <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_33 -->
@@ -698,7 +722,7 @@
     <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_37 -->
     <!-- Part wheel_gear_v6_5 -->
     <visual>
-      <origin xyz="4.16334e-17 -2.77556e-17 0.0055" rpy="-1.5708 -1.31087e-17 2.33036e-17"/>
+      <origin xyz="0 0 -0.0055" rpy="1.5708 -0 -7.97186e-33"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_gear_v6__2.stl"/>
       </geometry>
@@ -707,7 +731,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="4.16334e-17 -2.77556e-17 0.0055" rpy="-1.5708 -1.31087e-17 2.33036e-17"/>
+      <origin xyz="0 0 -0.0055" rpy="1.5708 -0 -7.97186e-33"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_gear_v6__2.stl"/>
       </geometry>
@@ -717,7 +741,7 @@
     <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_40 -->
     <!-- Part large_support_4 -->
     <visual>
-      <origin xyz="-0.033 -0.015 -0.0015" rpy="1.34326e-16 -1.5708 0"/>
+      <origin xyz="-0.033 0.015 0.0015" rpy="-3.14159 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/large_support.stl"/>
       </geometry>
@@ -726,7 +750,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.033 -0.015 -0.0015" rpy="1.34326e-16 -1.5708 0"/>
+      <origin xyz="-0.033 0.015 0.0015" rpy="-3.14159 1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/large_support.stl"/>
       </geometry>
@@ -737,7 +761,7 @@
     <!-- Part din_en_iso_4762_m2_5x25_ipt_v2_24 -->
     <!-- Part servo_base_6 -->
     <visual>
-      <origin xyz="-0.157 0.024 0.03175" rpy="1.5708 6.77107e-16 -1.5708"/>
+      <origin xyz="-0.187 -0.024 -0.03175" rpy="-1.5708 -1.44443e-14 1.5708"/>
       <geometry>
         <mesh filename="package://arm_description/assets/servo_base__2.stl"/>
       </geometry>
@@ -746,14 +770,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.157 0.024 0.03175" rpy="1.5708 6.77107e-16 -1.5708"/>
+      <origin xyz="-0.187 -0.024 -0.03175" rpy="-1.5708 -1.44443e-14 1.5708"/>
       <geometry>
         <mesh filename="package://arm_description/assets/servo_base__2.stl"/>
       </geometry>
     </collision>
     <!-- Part 6mm_bearing_v2_4 -->
     <visual>
-      <origin xyz="-5.55112e-16 1.58207e-15 0.0595" rpy="-1.5708 1.5708 0"/>
+      <origin xyz="-1.02999e-15 -6.21031e-16 -0.0595" rpy="1.5708 -1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/6mm_bearing_v2.stl"/>
       </geometry>
@@ -762,14 +786,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-5.55112e-16 1.58207e-15 0.0595" rpy="-1.5708 1.5708 0"/>
+      <origin xyz="-1.02999e-15 -6.21031e-16 -0.0595" rpy="1.5708 -1.5708 0"/>
       <geometry>
         <mesh filename="package://arm_description/assets/6mm_bearing_v2.stl"/>
       </geometry>
     </collision>
     <!-- Part wheel_v5_4 -->
     <visual>
-      <origin xyz="9.71445e-17 -2.77556e-17 0.058" rpy="1.5708 -3.0758e-15 -3.14159"/>
+      <origin xyz="-2.74303e-17 -3.46945e-18 -0.058" rpy="-1.5708 2.21489e-14 3.14159"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_v5.stl"/>
       </geometry>
@@ -778,7 +802,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="9.71445e-17 -2.77556e-17 0.058" rpy="1.5708 -3.0758e-15 -3.14159"/>
+      <origin xyz="-2.74303e-17 -3.46945e-18 -0.058" rpy="-1.5708 2.21489e-14 3.14159"/>
       <geometry>
         <mesh filename="package://arm_description/assets/wheel_v5.stl"/>
       </geometry>
@@ -787,24 +811,82 @@
   <!-- Link link_6 -->
   <link name="link_6">
     <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="1e-09"/>
-      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+      <origin xyz="-0.00573906 2.38985e-16 -0.03175" rpy="0 0 0"/>
+      <mass value="0.00249164"/>
+      <inertia ixx="2.74245e-06" ixy="5.55038e-22" ixz="4.35686e-09" iyy="2.5854e-06" iyz="-3.42784e-21" izz="2.76367e-07"/>
     </inertial>
+    <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_41 -->
+    <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_42 -->
+    <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_43 -->
+    <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_44 -->
+    <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_45 -->
+    <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_46 -->
+    <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_47 -->
     <!-- Part wheel_gear_v6_6 -->
     <visual>
-      <origin xyz="0 0 0.0055" rpy="-1.5708 -2.36422e-17 -7.48843e-17"/>
+      <origin xyz="7.21645e-16 2.498e-16 -0.0055" rpy="1.5708 4.35287e-15 1.01301e-16"/>
       <geometry>
-        <mesh filename="package://arm_description/assets/wheel_gear_v6__2.stl"/>
+        <mesh filename="package://arm_description/assets/wheel_gear_v6__3.stl"/>
       </geometry>
       <material name="wheel_gear_v6_6_material">
         <color rgba="0.960784 0.960784 0.964706 1"/>
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0.0055" rpy="-1.5708 -2.36422e-17 -7.48843e-17"/>
+      <origin xyz="7.21645e-16 2.498e-16 -0.0055" rpy="1.5708 4.35287e-15 1.01301e-16"/>
       <geometry>
-        <mesh filename="package://arm_description/assets/wheel_gear_v6__2.stl"/>
+        <mesh filename="package://arm_description/assets/wheel_gear_v6__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_48 -->
+    <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_49 -->
+    <!-- Part ph_pan_head_screw_m2x0_40_x_6__e925606c9d0777623cf02b2ae3e987b1_50 -->
+    <!-- Part large_support_5 -->
+    <visual>
+      <origin xyz="-0.033 0.015 0.0015" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://arm_description/assets/large_support__2.stl"/>
+      </geometry>
+      <material name="large_support_5_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.033 0.015 0.0015" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://arm_description/assets/large_support__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part 6mm_bearing_v2_5 -->
+    <visual>
+      <origin xyz="8.88178e-16 5.55112e-16 -0.0595" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://arm_description/assets/6mm_bearing_v2__2.stl"/>
+      </geometry>
+      <material name="6mm_bearing_v2_5_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="8.88178e-16 5.55112e-16 -0.0595" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://arm_description/assets/6mm_bearing_v2__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheel_v5_5 -->
+    <visual>
+      <origin xyz="7.21645e-16 3.05311e-16 -0.058" rpy="-1.5708 -5.01901e-15 3.14159"/>
+      <geometry>
+        <mesh filename="package://arm_description/assets/wheel_v5__2.stl"/>
+      </geometry>
+      <material name="wheel_v5_5_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="7.21645e-16 3.05311e-16 -0.058" rpy="-1.5708 -5.01901e-15 3.14159"/>
+      <geometry>
+        <mesh filename="package://arm_description/assets/wheel_v5__2.stl"/>
       </geometry>
     </collision>
   </link>
@@ -818,57 +900,57 @@
     </inertial>
   </link>
   <joint name="tcp_frame" type="fixed">
-    <origin xyz="0 0 0.0005" rpy="-3.14159 -2.36422e-17 -7.48843e-17"/>
+    <origin xyz="-0.033 2.498e-16 -0.03175" rpy="3.14159 1.5708 0"/>
     <parent link="link_6"/>
     <child link="tcp"/>
     <axis xyz="0 0 0"/>
   </joint>
   <!-- Joint from link_5 to link_6 -->
   <joint name="joint_6" type="revolute">
-    <origin xyz="-0.145 0.0315 0.03175" rpy="1.5708 1.56131 -6.00447e-13"/>
+    <origin xyz="-0.175 -0.0315 -0.03175" rpy="1.5708 1.5708 0"/>
     <parent link="link_5"/>
     <child link="link_6"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="1" lower="-0.00948244" upper="4.70291"/>
+    <limit effort="10" velocity="1" lower="0" upper="3.14159"/>
   </joint>
   <!-- Joint from link_4 to link_5 -->
   <joint name="joint_5" type="revolute">
-    <origin xyz="0.0979844 -0.0204038 0.03175" rpy="1.5708 -0.759527 -3.02672"/>
+    <origin xyz="-0.145 -0.0315 -0.03175" rpy="1.5708 1.5708 0"/>
     <parent link="link_4"/>
     <child link="link_5"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="1" lower="-2.33032" upper="0.81127"/>
+    <limit effort="10" velocity="1" lower="-3.55187e-14" upper="3.14159"/>
   </joint>
   <!-- Joint from link_3 to link_4 -->
   <joint name="joint_4" type="revolute">
-    <origin xyz="-0.181878 0.130753 -6.45317e-16" rpy="-2.62547e-15 -2.40252e-15 0.947497"/>
+    <origin xyz="-3.66374e-15 0.224 0.063" rpy="1.3247e-15 -5.66554e-16 -3.14159"/>
     <parent link="link_3"/>
     <child link="link_4"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="1" lower="-0.114869" upper="3.02672"/>
+    <limit effort="10" velocity="1" lower="7.28578e-15" upper="3.14159"/>
   </joint>
   <!-- Joint from link_2 to link_3 -->
   <joint name="joint_3" type="revolute">
-    <origin xyz="-0.166 1.66533e-16 -2.70617e-16" rpy="-3.14159 -4.14511e-16 3.96651e-18"/>
+    <origin xyz="-0.166 -2.77556e-17 -2.08167e-17" rpy="-3.14159 2.92704e-17 5.55112e-17"/>
     <parent link="link_2"/>
     <child link="link_3"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="1" lower="-0.947497" upper="2.1941"/>
+    <limit effort="10" velocity="1" lower="-1.98875e-14" upper="3.14159"/>
   </joint>
   <!-- Joint from link_1 to link_2 -->
   <joint name="joint_2" type="revolute">
-    <origin xyz="-8.63296e-18 0.0315746 -0.0675" rpy="1.5708 -0.0528179 3.14159"/>
+    <origin xyz="-1.85992e-17 -0.0315746 0.0675" rpy="-1.5708 1.26492e-14 -3.14159"/>
     <parent link="link_1"/>
     <child link="link_2"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="1" lower="-0.0528179" upper="3.08877"/>
+    <limit effort="10" velocity="1" lower="-1.26017e-14" upper="3.14159"/>
   </joint>
   <!-- Joint from base_link to link_1 -->
   <joint name="joint_1" type="revolute">
-    <origin xyz="-2.23802e-17 9.14136e-05 0.0755" rpy="3.14159 -8.32667e-16 -1.7299"/>
+    <origin xyz="1.39768e-18 9.14136e-05 0.0755" rpy="1.7878e-15 -9.97279e-17 3.14159"/>
     <parent link="base_link"/>
     <child link="link_1"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="1" lower="-1.7299" upper="1.4117"/>
+    <limit effort="10" velocity="1" lower="3.55187e-14" upper="3.14159"/>
   </joint>
 </robot>

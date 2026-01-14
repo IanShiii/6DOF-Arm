@@ -1,13 +1,13 @@
 {
     "configuration": "default",
     "documentId": "76b458222900603d1acdcd2d",
-    "documentMicroversion": "53a6347484b6893f3259b23e",
+    "documentMicroversion": "9bb227e924d1980a1dfa9475",
     "elementId": "3d4ecdfc6f389b5bac3bc617",
     "fullConfiguration": "default",
     "id": "M00uBwumG0lYQtbXu",
     "isStandardContent": false,
     "name": "joint_2_connecter2 <1>",
-    "partId": "RbCH",
+    "partId": "RaCH",
     "suppressed": false,
     "type": "Part"
 }

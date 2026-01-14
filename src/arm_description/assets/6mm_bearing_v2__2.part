@@ -1,14 +1,14 @@
 {
     "configuration": "default",
     "documentId": "f13e364970d6baa9b84bee6e",
-    "documentMicroversion": "0e64da343131f85a6daa5844",
-    "documentVersion": "a0449efead644833a82189c6",
+    "documentMicroversion": "d6afbe5d26c9099b97384b00",
+    "documentVersion": "e373391fce88720bdcc190b6",
     "elementId": "58196ee45b376cff7401dabb",
     "fullConfiguration": "default",
-    "id": "MnFwTUVEPrEVz3bE8",
+    "id": "M3p4Dm4Rrn9k3QdYe",
     "isStandardContent": false,
-    "name": "Wheel_gear v6 <1>",
-    "partId": "JFP",
+    "name": "6mm Bearing v2 <1>",
+    "partId": "JFX",
     "suppressed": false,
     "type": "Part"
 }
