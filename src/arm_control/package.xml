@@ -18,6 +18,8 @@
   <depend>rclcpp_lifecycle</depend>
   <depend>PiPCA9685</depend>
 
+  <exec_depend>controller_manager</exec_depend>
+
   <export>
     <build_type>ament_cmake</build_type>
   </export>
