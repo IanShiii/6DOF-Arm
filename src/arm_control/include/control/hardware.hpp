@@ -71,14 +71,14 @@ namespace hardware {
             const double joint_3_microseconds_for_0_degrees_ = 610.0;
             const double joint_3_microseconds_for_180_degrees_ = 2065.0;
 
-            const double joint_4_microseconds_for_0_degrees_ = 590.0;
-            const double joint_4_microseconds_for_180_degrees_ = 2030.0;
+            const double joint_4_microseconds_for_0_degrees_ = 600.0;
+            const double joint_4_microseconds_for_180_degrees_ = 2100.0;
 
-            const double joint_5_microseconds_for_0_degrees_ = 590.0;
+            const double joint_5_microseconds_for_0_degrees_ = 600.0;
             const double joint_5_microseconds_for_180_degrees_ = 2030.0;
 
-            const double joint_6_microseconds_for_0_degrees_ = 590.0;
-            const double joint_6_microseconds_for_180_degrees_ = 1667.0;
+            const double joint_6_microseconds_for_0_degrees_ = 600.0;
+            const double joint_6_microseconds_for_180_degrees_ = 2055.0;
 
             /**
              * @brief Converts an angle in radians to ticks for the PCA9685.
