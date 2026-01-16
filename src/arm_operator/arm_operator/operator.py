@@ -23,7 +23,7 @@ class Operator(Node):
         self.joint_trajectory_publisher = self.create_publisher(JointTrajectory, 'arm_controller/joint_trajectory', 10)
 
         self.current_command_type = None
-        self.set_command_type(ServoCommandType.Request.JOINT_JOG)
+        self.set_command_type(ServoCommandType.Request.TWIST)
 
         self.get_logger().info('OperatorServo node started')
 
