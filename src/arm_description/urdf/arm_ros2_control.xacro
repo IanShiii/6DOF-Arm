@@ -10,37 +10,37 @@
         <joint name="joint_1">
             <command_interface name="position"/>
             <state_interface name="position"/>
-            <param name="servo_id">0</param>
+            <param name="servo_id">6</param>
         </joint>
 
         <joint name="joint_2">
             <command_interface name="position"/>
             <state_interface name="position"/>
-            <param name="servo_id">1</param>
+            <param name="servo_id">5</param>
         </joint>
 
         <joint name="joint_3">
             <command_interface name="position"/>
             <state_interface name="position"/>
-            <param name="servo_id">2</param>
+            <param name="servo_id">1</param>
         </joint>
 
         <joint name="joint_4">
             <command_interface name="position"/>
             <state_interface name="position"/>
-            <param name="servo_id">3</param>
+            <param name="servo_id">4</param>
         </joint>
 
         <joint name="joint_5">
             <command_interface name="position"/>
             <state_interface name="position"/>
-            <param name="servo_id">4</param>
+            <param name="servo_id">2</param>
         </joint>
 
         <joint name="joint_6">
             <command_interface name="position"/>
             <state_interface name="position"/>
-            <param name="servo_id">5</param>
+            <param name="servo_id">0</param>
         </joint>
     </ros2_control>
 
