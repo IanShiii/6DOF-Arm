@@ -36,12 +36,19 @@ namespace hardware {
     }
 
     hardware_interface::CallbackReturn HardwareInterface::on_configure([[maybe_unused]] const rclcpp_lifecycle::State & previous_state) {
+        // joint_1_target_degrees_ = 1.5708;
+        // joint_2_target_degrees_ = 1.0;
+        // joint_3_target_degrees_ = 0.2;
+        // joint_4_target_degrees_ = 0.5;
+        // joint_5_target_degrees_ = 0.5;
+        // joint_6_target_degrees_ = 0.5;
+
         joint_1_target_degrees_ = 1.5708;
-        joint_2_target_degrees_ = 1.0;
-        joint_3_target_degrees_ = 0.2;
-        joint_4_target_degrees_ = 0.5;
-        joint_5_target_degrees_ = 0.5;
-        joint_6_target_degrees_ = 0.5;
+        joint_2_target_degrees_ = 1.5708;
+        joint_3_target_degrees_ = 1.5708;
+        joint_4_target_degrees_ = 1.5708;
+        joint_5_target_degrees_ = 1.5708;
+        joint_6_target_degrees_ = 1.5708;
 
         pca.set_pwm_freq(50);
         pca.set_all_pwm(0, 4096);
