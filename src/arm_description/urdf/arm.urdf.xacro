@@ -1,6 +1,16 @@
 <?xml version="1.0"?>
 <robot name="arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+  <!-- world frame -->
+  <link name="world"/>
+
+  <!-- rotate robot 90° about Z -->
+  <joint name="world_joint" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 1.5708"/>
+  </joint>
+
   <!-- Load pure URDF -->
   <xacro:include filename="$(find arm_description)/urdf/arm.urdf"/>
 

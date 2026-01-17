@@ -62,7 +62,6 @@ def generate_launch_description():
     )
 
     move_group_launch = generate_move_group_launch(moveit_config)
-    static_virtual_joint_tfs_launch = generate_static_virtual_joint_tfs_launch(moveit_config)
 
     acceleration_filter_update_period = {"update_period": 0.02}
     planning_group_name = {"planning_group_name": "arm"}
@@ -99,7 +98,6 @@ def generate_launch_description():
         robot_state_publisher_node,
         arm_control,
         move_group_launch,
-        static_virtual_joint_tfs_launch,
         moveit_servo_node,
         joy_node,
         operator_node
