@@ -1,4 +1,6 @@
 # 6DOF-Arm
+Motion planning for a custom 6DOF arm. Built using ROS 2, ros2_control, and MoveIt 2.
+
 ## Requirements
 - [Ubuntu 24.04](https://releases.ubuntu.com/jammy/)
 - [ROS2 Jazzy Jalisco](https://docs.ros.org/en/jazzy/index.html)
@@ -6,8 +8,8 @@
 - [Moveit2 (Jazzy Branch)](https://moveit.picknik.ai/main/index.html)
 
 ## Setup
-1. Clone this repo
-2. cd to the root of this repo
+1. Clone this repo.
+2. cd to the root of this repo.
 3. Run [rosdep](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Rosdep.html#rosdep-operation) to install all missing packages.
 ```
 sudo rosdep init
