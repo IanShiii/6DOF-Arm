@@ -911,7 +911,7 @@
     <parent link="link_5"/>
     <child link="link_6"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="1" lower="0" upper="3.14159"/>
+    <limit effort="10" velocity="2" lower="0" upper="3.14159"/>
   </joint>
   <!-- Joint from link_4 to link_5 -->
   <joint name="joint_5" type="revolute">
@@ -919,7 +919,7 @@
     <parent link="link_4"/>
     <child link="link_5"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="1" lower="0" upper="3.14159"/>
+    <limit effort="10" velocity="2" lower="0" upper="3.14159"/>
   </joint>
   <!-- Joint from link_3 to link_4 -->
   <joint name="joint_4" type="revolute">
@@ -927,7 +927,7 @@
     <parent link="link_3"/>
     <child link="link_4"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="1" lower="0" upper="3.14159"/>
+    <limit effort="10" velocity="2" lower="0" upper="3.14159"/>
   </joint>
   <!-- Joint from link_2 to link_3 -->
   <joint name="joint_3" type="revolute">
@@ -935,7 +935,7 @@
     <parent link="link_2"/>
     <child link="link_3"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="1" lower="-4.44089e-15" upper="3.14159"/>
+    <limit effort="10" velocity="2" lower="-4.44089e-15" upper="3.14159"/>
   </joint>
   <!-- Joint from link_1 to link_2 -->
   <joint name="joint_2" type="revolute">
@@ -943,7 +943,7 @@
     <parent link="link_1"/>
     <child link="link_2"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="1" lower="0" upper="3.14159"/>
+    <limit effort="10" velocity="2" lower="0" upper="3.14159"/>
   </joint>
   <!-- Joint from base_link to link_1 -->
   <joint name="joint_1" type="revolute">
@@ -951,6 +951,6 @@
     <parent link="base_link"/>
     <child link="link_1"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="1" lower="0" upper="3.14159"/>
+    <limit effort="10" velocity="2" lower="0" upper="3.14159"/>
   </joint>
 </robot>

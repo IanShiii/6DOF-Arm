@@ -22,4 +22,9 @@ arm_controller:
     state_interfaces:
       - position
     allow_nonzero_velocity_at_trajectory_end: false
+
+joint_state_broadcaster:
+  ros__parameters:
+    publish_rate: 100
+
     

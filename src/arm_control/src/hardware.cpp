@@ -1,4 +1,4 @@
-#include "control/hardware.hpp"
+#include "arm_control/hardware.hpp"
 
 namespace hardware {
 

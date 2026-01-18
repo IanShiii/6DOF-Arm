@@ -81,9 +81,9 @@ def generate_launch_description():
         output="screen",
     )
 
-    joy_node = Node(
-        package='joy',
-        executable='joy_node',
+    arm_exeuction_manager = Node(
+        package='arm_execution_manager',
+        executable='arm_execution_manager',
         output='screen'
     )
 
@@ -99,6 +99,6 @@ def generate_launch_description():
         arm_control,
         move_group_launch,
         moveit_servo_node,
-        joy_node,
+        arm_exeuction_manager,
         operator_node
     ])
