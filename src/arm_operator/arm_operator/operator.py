@@ -37,7 +37,7 @@ class Operator(Node):
         self.last_target_pose.pose.orientation.x = 0.5
 
         self.create_timer(1.5, self.publish_last_target_pose)
-        self.create_timer(0.2, self.create_random_pose)
+        # self.create_timer(0.2, self.create_random_pose)
 
         self.get_logger().info('OperatorServo node started')
 
