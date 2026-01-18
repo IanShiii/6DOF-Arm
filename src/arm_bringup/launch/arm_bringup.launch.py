@@ -46,6 +46,16 @@ def generate_launch_description():
         )
     ])
 
+    rosbridge_launch = IncludeLaunchDescription(
+        FrontendLaunchDescriptionSource(
+            os.path.join(
+                get_package_share_directory('rosbridge_server'),
+                'launch',
+                'rosbridge_websocket_launch.xml'
+            )
+        )
+    )
+
     robot_state_publisher_node = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
@@ -95,6 +105,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         foxglove_bridge_launch,
+        rosbridge_launch,
         robot_state_publisher_node,
         arm_control,
         move_group_launch,
